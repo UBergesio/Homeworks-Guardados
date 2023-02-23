@@ -39,14 +39,17 @@ function forEach(array, cb) {
    // Debes iterar sobre el arreglo, y por cada elemento ejecutar el callback.
    // Debes pasarle el elemento como argumento al callback.
    // Tu código:
-
+   var elArreglo = array
+   elArreglo.forEach((num) => {return (cb(num))} )
+}
 
 function map(array, cb) {
    // Debes iterar sobre el arreglo, y cada elemento pasárselo como arguemento al callback.
    // Tiene que guardar el resultado devuelto por el callback en cada elemento dentro de un nuevo arreglo.
    // Retorna el nuevo arreglo.
    // Tu código:
-
+   var nuevoArray = array.map( (num) => { return cb(num) } );
+   return nuevoArray
 }
 
 function filter(arrayOfStrings) {
